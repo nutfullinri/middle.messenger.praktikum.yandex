@@ -1,0 +1,29 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.error {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #1E1E1E;
+  text-align: center;
+
+  &__code-text {
+    font-size: 40px;
+  }
+
+  &__label {
+    font-size: 20px;
+  }
+
+  &__leave-link {
+    color: #3369F3;
+    font-size: 11px;
+    cursor: pointer;
+  }
+}
