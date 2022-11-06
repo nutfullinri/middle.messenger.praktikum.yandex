@@ -1,0 +1,117 @@
+@import "src/assets/styles/variables.scss";
+
+.previews-chat-wrapper {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border: 1px solid $color-black;
+  font-family: Inter, sans-serif;
+}
+
+.previews {
+  width: 310px;
+  height: 100%;
+  border-right: solid $color-black 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview {
+  padding: 14px 10px;
+  display: flex;
+  gap: 17px;
+  height: fit-content;
+  border: 1px solid $color-black;
+
+  &__image {
+    width: 39px;
+    min-width: 39px;
+    height: 39px;
+    border: 1px solid $color-black;
+    box-sizing: border-box;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__contact {
+      width: 100%;
+      color: $color-font-dark;
+      font-size: 13px;
+      line-height: 13px;
+      font-weight: 600;
+    }
+
+    &__message {
+      width: 100%;
+      color: $color-message-background-grey;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 500;
+    }
+  }
+}
+
+.chat {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__contact {
+    display: flex;
+    padding: 14px 10px;
+    gap: 10px;
+    border-bottom: 1px solid $color-black;
+
+    &__image {
+      width: 39px;
+      height: 39px;
+      border: 1px solid $color-black;
+      box-sizing: border-box;
+    }
+
+    &__info {
+      flex-grow: 1;
+      align-self: center;
+      color: $color-font-dark;
+      font-size: 13px;
+      line-height: 13px;
+      font-weight: 600;
+    }
+  }
+
+  &__messages {
+    padding: 0 9px 39px;
+    flex-grow: 1;
+    gap: 13px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 1px solid $color-black;
+
+    &__message {
+      padding: 10px;
+      width: fit-content;
+      max-width: 380px;
+      background-color: $color-background-message-white;
+    }
+
+    &__message_sent {
+      background-color: $color-background-message-sent-white;
+      align-self: flex-end;
+    }
+  }
+
+  &__message-form {
+    padding: 12px 10px;
+    gap: 15px;
+    display: flex;
+
+    &__input {
+      height: 21px;
+      flex-grow: 1;
+      border: 1px solid $color-black;
+    }
+  }
+}

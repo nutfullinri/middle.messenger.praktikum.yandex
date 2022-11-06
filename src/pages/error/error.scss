@@ -1,3 +1,5 @@
+@import "src/assets/styles/variables.scss";
+
 .error-container {
   display: flex;
   justify-content: center;
@@ -10,7 +12,7 @@
   align-self: center;
   flex-direction: column;
   gap: 20px;
-  color: #1E1E1E;
+  color: $color-font-dark;
   text-align: center;
 
   &__code-text {
@@ -22,7 +24,7 @@
   }
 
   &__leave-link {
-    color: #3369F3;
+    color: $color-link;
     font-size: 11px;
     cursor: pointer;
   }
