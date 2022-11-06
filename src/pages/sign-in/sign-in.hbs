@@ -1,26 +1,13 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="./sign-in.scss">
-    </head>
-    <body>
-        <div class="form-container">
-            <form class="form">
-                <div class="form__header">sign in</div>
-                <div class="form__controls">
-                    <div class="form__controls__labeled-input">
-                        <div class="form__controls__labeled-input__label">login</div>
-                        <input name="login" class="form__controls__labeled-input__input">
-                    </div>
-                    <div class="form__controls__labeled-input">
-                        <div class="form__controls__labeled-input__label">password</div>
-                        <input name="password" class="form__controls__labeled-input__input">
-                    </div>
-                </div>
-                <div class="form__footer">
-                    <button class="form__footer__submit-btn">sign in</button>
-                    <div class="form__footer__back-btn">sign up</div>
-                </div>
-            </form>
+<div class="form-container">
+    <form class="form">
+        <div class="form__header">sign in</div>
+        <div class="form__controls">
+            {{{login}}}
+            {{{password}}}
         </div>
-    </body>
-</html>
+        <div class="form__footer">
+            {{{proceedButton}}}
+            <div class="form__footer__back-btn">sign up</div>
+        </div>
+    </form>
+</div>
